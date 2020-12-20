@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "make"
+        },
+        {
+            "label": "Clear",
+            "type": "shell",
+            "command": "make clear"
+        },
+        {
+            "label": "Flash",
+            "type": "shell",
+            "command": "make flash"
+        },
+        {
+            "label": "Flash softdevice",
+            "type": "shell",
+            "command": "make flash_softdevice"
+        },
+        {
+            "label": "Erase device",
+            "type": "shell",
+            "command": "make erase"
+        },
+        {
+            "label": "Combine with softdevice",
+            "type": "shell",
+            "command": "cd scripts && bash combine.bat"
+        },
+        {
+            "label": "Configurate sdk",
+            "type": "process",
+            "command": "java",
+            "args": [
+                "-jar",
+                "C:/nRF/nRF5_SDK_17.0.0_9d13099/external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar",
+                "./config/sdk_config.h"
+            ]
+        },
+        {
+            "label": "cmdR-All",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "cmdR-1",
+                "cmdR-2"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

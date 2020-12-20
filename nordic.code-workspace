@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"C_Cpp.commentContinuationPatterns": [
+			"/**"
+		],
+		"C_Cpp.default.intelliSenseMode": "gcc-x64",
+		"C_Cpp.vcpkg.enabled": false,
+		"C_Cpp.default.browse.path": [
+			"C:/nRF/8-2019-q3-update/arm-none-eabi/include"
+		],
+		"C_Cpp.default.compilerPath": "C:/nRF/8-2019-q3-update/bin",
+		"C_Cpp.default.systemIncludePath": [
+			"C:/nRF/8-2019-q3-update/arm-none-eabi/include",
+			"C:/nRF/8-2019-q3-update/lib/gcc/arm-none-eabi/8.3.1/include",
+			"C:/nRF/8-2019-q3-update/lib/gcc/arm-none-eabi/8.3.1/include-fixed",
+			"C:/nRF/8-2019-q3-update/arm-none-eabi/include"
+		]
+	}
+}
